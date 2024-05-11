@@ -19,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: ["typescript"]
+        language: ["javascript", "typescript"]
 
     steps:
       - name: Checkout repository
@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "22.1.0" # Adjust the node version as needed
+          node-version: "14" # Adjust the node version as needed
 
       - name: Install pnpm
         run: npm install -g pnpm
@@ -38,7 +38,6 @@ jobs:
         with:
           path: |
             ~/.pnpm-store
-            !**/node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-
