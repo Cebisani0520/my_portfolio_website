@@ -19,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: ["javascript", "typescript"]
+        language: [typescript"]
 
     steps:
       - name: Checkout repository
@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "14" # Adjust the node version as needed
+          node-version: "22.1.0" # Adjust the node version as needed
 
       - name: Install pnpm
         run: npm install -g pnpm
