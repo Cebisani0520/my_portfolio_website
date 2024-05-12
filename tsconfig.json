@@ -26,8 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/components/Header/Header.js",
-    "app/components/Header/HeaderStyles.js"
+    "src/app/components/Header/Header.js",
+    "src/app/components/Header/HeaderStyles.js"
   ],
   "exclude": ["node_modules"]
 }
