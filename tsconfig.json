@@ -27,7 +27,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/components/Header/Header.js",
-    "src/app/components/Header/HeaderStyles.js"
+    "src/app/components/Header/HeaderStyles.js",
+    "components/ui/button.tsx",
+    "components/ui/modal.tsx"
   ],
   "exclude": ["node_modules"]
 }
