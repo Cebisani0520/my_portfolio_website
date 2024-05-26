@@ -1,30 +1,8 @@
 "use client";
-import React from "react";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const links = [
-  {
-    name: "home",
-    path: "/",
-  },
-  {
-    name: "sercvices",
-    path: "/services",
-  },
-  {
-    name: "resume",
-    path: "/resume",
-  },
-  {
-    name: "work",
-    path: "/work",
-  },
-  {
-    name: "contact",
-    path: "/contact",
-  },
-];
+import { links } from "@/src/constants/links";
 
 const Nav = () => {
   const pathname = usePathname();
